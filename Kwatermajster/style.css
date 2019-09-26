@@ -1,0 +1,94 @@
+* { margin: 0 0 0 0;
+    padding: 0px;
+    font-family: Open+Sans, arial;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddb;
+    
+    
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    background-color: white; 
+}
+
+#HeroImage{
+    width: 100%;
+    display: block;
+    
+}
+#addName{
+    margin; 10px auto;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+nav{
+    background-color: lightgray;  
+}
+
+a.menu {
+    display: inline-block;
+    padding: 12px 30px;
+    width: 16%;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+a.menu:hover {
+    background-color:darkgray;
+    border-radius: 45%;
+    font-size: 20px;
+}
+.active {
+    background-color: darkgray;
+    border-radius: 45%;
+    font-size: 20px;
+
+}
+a.footer {
+    display: inline-block;
+    padding: 20px 20px;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.footer:hover {
+    background-color:darkgray;
+}
+footer{
+    background-color: lightgray;
+}
+.row{
+    padding: 8px;
+    margin: 5px 5px;
+    
+}
+label{
+    padding: 10px;
+}
+.col{
+    display: inline-block;
+    margin: 0 10px;
+}
+p{
+    padding: 10px;
+    margin: 10px 10px;
+    text-align: center;
+    
+}
+h1{
+    text-align: center;
+    font-size: 24px;
+    
+    
+}
