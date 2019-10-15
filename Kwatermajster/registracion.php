@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     session_start();
 
@@ -159,6 +160,8 @@
 
 ?>
 
+=======
+>>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -172,6 +175,7 @@
         <link rel="icon" href="favicon.ico">
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
         <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
         <script>
         grecaptcha.ready(function() {
@@ -181,17 +185,30 @@
         });
         </script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+=======
+>>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
     </head>    
     <body>
         <div id="wrapper">
             <header> 
+<<<<<<< HEAD
               <img id="HeroImage"src="img/horizon.jpg" alt="Programista - Header" />
               <nav>
                 <a class="menu active" href="index.php">O Projekcie</a>
+=======
+              <img id="HeroImage" src="img/horizon.jpg" alt="Programista - Header" />
+               
+               
+            </header>
+            
+            <nav>
+                <a class="menu " href="index.php">O Projekcie</a>
+>>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
                 <a class="menu " href="addBaza.php">Baza</a>
                 <a class="menu " href="#">Kalendarz</a>
                 <a class="menu " href="#">Wypożyczenia</a>
                 <a class="menu " href="login.php">Logowanie</a>
+<<<<<<< HEAD
                 <a class="menu " href="registracion.php">Rejesteracja</a>
               </nav>
             </header>
@@ -369,12 +386,55 @@
                    </form>
                    
                    
+=======
+                <a class="menu active" href="registracion.php">Rejesteracja</a>
+                
+            </nav>
+            
+            <section>
+                <article>
+                  <p id="addName">Dodaj nowy sprzęt</p>
+                   <form action="add.php" method="post">
+                      
+                       <div class="row"><label><input type="text" name="Name" placeholder="" id="" >Nazwa</label></div>
+                       
+                       <div class="row"><label><input type="password" name="passone" id="" >Hasło1</label></div>
+                       
+                       <div class="row"><label><input type="password" name="passtwo" id="" >Hasło2</label></div>
+                       
+                       <div class="row"><label><input type="email" name="email" id=""  >e-mail</label>
+                       </div>
+                       
+                       
+                       <div class="row"><label><input type="text" name="pesel" id=""  >Pesel</label>
+                       </div>
+                       
+                       <div class="row"><label><input type="text" name="idcard" id=""  >dowód osobisty</label>
+                       </div>
+                       
+                       <div class="row"><label><input type="text" name="surname" placeholder="Kowslski" id="" >Nazwisko</label></div>
+                       
+                       <div class="row"><label><input type="text" name="firstname" placeholder="jan" id="" >Imię</label></div>
+                       
+                   </form>
+>>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
                 </article>
             </section>
             
             <footer> 
                 <a class="footer" href="index.html">Koniec strony </a>   
             </footer>
+<<<<<<< HEAD
         </div>
     </body>
+=======
+            
+            
+            
+            
+        </div>
+        
+    </body>
+    
+>>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
 </html>

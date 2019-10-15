@@ -17,6 +17,7 @@
         <div id="wrapper">
             <header> 
               <img id="HeroImage"src="img/horizon.jpg" alt="Programista - Header" />
+<<<<<<< HEAD:Kwatermajster/index.php
               <nav>
                 <a class="menu active" href="index.php">O Projekcie</a>
                 <a class="menu " href="addBaza.php">Baza</a>
@@ -26,6 +27,19 @@
                 <a class="menu " href="registracion.php">Rejesteracja</a>
               </nav>
             </header>
+=======
+            </header>
+            
+            <nav>
+                <a class="menu active" href="index.php">O Projekcie</a>
+                <a class="menu " href="addBaza.php">Baza</a>
+                <a class="menu " href="#">Kalendarz</a>
+                <a class="menu " href="#">Wypożyczenia</a>
+                <a class="menu " href="login.php">Logowanie</a>
+                <a class="menu " href="registracion.php">Rejesteracja</a>
+                
+            </nav>
+>>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7:Kwatermajster/index.php
             
             <section>
                 <article>
