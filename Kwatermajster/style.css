@@ -4,20 +4,21 @@
     box-sizing: border-box;
 }
 
+
 body{
     background-color: #ddb;
-    
     
 }
 
 #wrapper {
-    max-width: 1000px;
+    max-width: 1366px;
     margin: 0 auto 0 auto;
     background-color: white; 
 }
 
 #HeroImage{
     width: 100%;
+    height: 240px;
     display: block;
     
 }
@@ -29,28 +30,49 @@ body{
     font-size: 24px;
     text-align: center;
 }
+header{
+    position: relative;
+}
 
 nav{
-    background-color: lightgray;  
+    background-color: lightgray;
+    width: 99%;
+    opacity: 75%;
+    top: 0px;
+    left: 0px;
+    padding: 3px;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 5px;
+    display: block;
 }
 
 a.menu {
+    background: lightgray;
     display: inline-block;
     padding: 12px 30px;
     width: 16%;
     color: black;
     text-decoration: none;
     text-align: center;
+    font-size: 18px;
 }
 a.menu:hover {
     background-color:darkgray;
-    border-radius: 45%;
-    font-size: 20px;
+    border-radius: 0%;
+    font-size: 18px;
+    opacity: 100%;
+    text-decoration:inherit;
+    font-weight: 700;
 }
 .active {
     background-color: darkgray;
-    border-radius: 45%;
-    font-size: 20px;
+    border-radius: 0%;
+    opacity: 60%;
+    font-size: 18px;
+    opacity: 100%;
+    text-decoration:inherit;
+    font-weight: 700;
 
 }
 a.footer {
@@ -90,5 +112,13 @@ h1{
     text-align: center;
     font-size: 24px;
     
-    
+}
+.error{
+    margin: 10px 0px 10px 10px;
+    color: red;
+    text-align: justify;
+}
+.errordev{
+    color: firebrick;
+    text-align: justify;
 }

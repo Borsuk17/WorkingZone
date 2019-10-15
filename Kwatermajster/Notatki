@@ -1,0 +1,9 @@
+
+<?php
+    if(isset($_SESSION['blad']))
+        {
+            echo $_SESSION['blad'];
+        }
+?>
+
+ <i class="fa fa-bars"></i>
