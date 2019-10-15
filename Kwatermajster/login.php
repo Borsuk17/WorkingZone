@@ -9,24 +9,24 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
-        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="stylesheet" href="style.css">
     </head>    
     <body>
         <div id="wrapper">
             <header> 
-              <img id="HeroImage"src="horizon.jpg" alt="Programista - Header" />
+              <img id="HeroImage" src="img/horizon.jpg" alt="Programista - Header" />
                
                
             </header>
             
             <nav>
-                <a class="menu " href="index.html">O Projekcie</a>
-                <a class="menu active" href="addBaza.html">Baza</a>
+                <a class="menu " href="index.php">O Projekcie</a>
+                <a class="menu " href="addBaza.php">Baza</a>
                 <a class="menu " href="#">Kalendarz</a>
                 <a class="menu " href="#">Wypożyczenia</a>
-                <a class="menu " href="#">Logowanie</a>
-                <a class="menu " href="#">Rejesteracja</a>
+                <a class="menu active" href="login.php">Logowanie</a>
+                <a class="menu " href="registracion.php">Rejesteracja</a>
                 
             </nav>
             

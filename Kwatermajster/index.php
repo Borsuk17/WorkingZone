@@ -15,16 +15,16 @@
     <body>
         <div id="wrapper">
             <header> 
-              <img id="HeroImage"src="horizon.jpg" alt="Programista - Header" />
+              <img id="HeroImage"src="img/horizon.jpg" alt="Programista - Header" />
             </header>
             
             <nav>
-                <a class="menu active" href="index.html">O Projekcie</a>
-                <a class="menu " href="addBaza.html">Baza</a>
+                <a class="menu active" href="index.php">O Projekcie</a>
+                <a class="menu " href="addBaza.php">Baza</a>
                 <a class="menu " href="#">Kalendarz</a>
                 <a class="menu " href="#">Wypożyczenia</a>
-                <a class="menu " href="#">Logowanie</a>
-                <a class="menu " href="#">Rejesteracja</a>
+                <a class="menu " href="login.php">Logowanie</a>
+                <a class="menu " href="registracion.php">Rejesteracja</a>
                 
             </nav>
             
