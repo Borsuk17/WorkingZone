@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 <?php
     session_start();
 
 
     if (isset($_POST['email']))
     {
-
 
         $email = $_POST['email'];
         $pesel = $_POST['pesel'];
@@ -93,7 +91,7 @@
         
         
 
-        require_once "connect.php";
+        require_once "php_script/connect.php";
         mysqli_report(MYSQLI_REPORT_STRICT);
 
         try
@@ -137,7 +135,7 @@
                     if($connection->query("INSERT INTO users (`id`, `user`, `passone`, `passtwo`, `email`, `date-registration`, `date-premium`, `confirm`, `pesel`, `idcard`, `surname`, `firstname`) VALUES (NULL, '$nick', '$pass_hash', '$pass_hash', '$email', '2019-10-09', '2019-10-09', '1', '$pesel', '$idcard', '$surname', '$firstname');"))
                     {
                         $_SESSION['goodregistracion']=true;
-                        header('Location: welcome.php');
+                        header('Location: good/goodRegistracion.php');
                         // exit();
                     }
                     else
@@ -160,8 +158,7 @@
 
 ?>
 
-=======
->>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
+
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -175,7 +172,6 @@
         <link rel="icon" href="favicon.ico">
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="stylesheet" href="style.css">
-<<<<<<< HEAD
         <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
         <script>
         grecaptcha.ready(function() {
@@ -185,33 +181,29 @@
         });
         </script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-=======
->>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
     </head>    
     <body>
         <div id="wrapper">
             <header> 
-<<<<<<< HEAD
-              <img id="HeroImage"src="img/horizon.jpg" alt="Programista - Header" />
+             <div class="herro_image">
+                  <img id="HeroImage"src="img/horizon.jpg" alt="Programista - Header" />
+              </div>
               <nav>
-                <a class="menu active" href="index.php">O Projekcie</a>
-=======
-              <img id="HeroImage" src="img/horizon.jpg" alt="Programista - Header" />
-               
-               
-            </header>
-            
-            <nav>
-                <a class="menu " href="index.php">O Projekcie</a>
->>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
-                <a class="menu " href="addBaza.php">Baza</a>
-                <a class="menu " href="#">Kalendarz</a>
-                <a class="menu " href="#">Wypożyczenia</a>
-                <a class="menu " href="login.php">Logowanie</a>
-<<<<<<< HEAD
-                <a class="menu " href="registracion.php">Rejesteracja</a>
+                   <ul class="ul-nav">
+                       <li class=""><a href="index.php">O Projekcie</a></li>
+                       <li><a href="addBaza.php">Dodaj</a></li>
+                       <li><a href="view.php">Przeglądaj</a></li>
+                       <li><a href="free1.php">Wolne1</a></li>
+                       <li><a href="calendar.php">Kalendarz</a></li>
+                       <li><a href="districts.php">Okręgi</a></li>
+                       <li><a href="mail.php">Mail-Test</a></li>
+                       <li><a href="messages.php">Wiadomości</a></li>
+                       <li><a href="login.php">Logowanie</a</li>
+                       <li><a href="registracion.php">Rejesteracja</a></li>
+                   </ul>
               </nav>
             </header>
+            
             
             <section>
                 <article>
@@ -386,55 +378,13 @@
                    </form>
                    
                    
-=======
-                <a class="menu active" href="registracion.php">Rejesteracja</a>
-                
-            </nav>
-            
-            <section>
-                <article>
-                  <p id="addName">Dodaj nowy sprzęt</p>
-                   <form action="add.php" method="post">
-                      
-                       <div class="row"><label><input type="text" name="Name" placeholder="" id="" >Nazwa</label></div>
-                       
-                       <div class="row"><label><input type="password" name="passone" id="" >Hasło1</label></div>
-                       
-                       <div class="row"><label><input type="password" name="passtwo" id="" >Hasło2</label></div>
-                       
-                       <div class="row"><label><input type="email" name="email" id=""  >e-mail</label>
-                       </div>
-                       
-                       
-                       <div class="row"><label><input type="text" name="pesel" id=""  >Pesel</label>
-                       </div>
-                       
-                       <div class="row"><label><input type="text" name="idcard" id=""  >dowód osobisty</label>
-                       </div>
-                       
-                       <div class="row"><label><input type="text" name="surname" placeholder="Kowslski" id="" >Nazwisko</label></div>
-                       
-                       <div class="row"><label><input type="text" name="firstname" placeholder="jan" id="" >Imię</label></div>
-                       
-                   </form>
->>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
+
+
                 </article>
             </section>
             
             <footer> 
-                <a class="footer" href="index.html">Koniec strony </a>   
+                <a class="footer" href="index.php">Created by Maciej Drążek ----------------------------- Index: 87029 SAN </a>   
             </footer>
-<<<<<<< HEAD
         </div>
-    </body>
-=======
-            
-            
-            
-            
-        </div>
-        
-    </body>
-    
->>>>>>> 6b6f172f0fb80051e945dbd9e0a23e08585f1fd7
 </html>

@@ -1,4 +1,19 @@
+<?php
+    session_start();
 
+    if(!isset($_SESSION['goodAdd']))
+    {
+        header('Location: ../index.php');
+        exit();
+    }
+    else
+    {
+        unset($_SESSION['goodAdd']);
+    }
+    
+    
+?>
+ 
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -6,19 +21,18 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title> Inwentory - Index </title>
+        <title> Inwentory - WELCOME </title>
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <link rel="stylesheet" href="style.css">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style.css">
     </head>    
     <body>
         <div id="wrapper">
             <header> 
              <div class="herro_image">
-                  <img id="HeroImage"src="img/horizon.jpg" alt="Programista - Header" />
+                  <img id="HeroImage"src="../img/horizon.jpg" alt="Programista - Header" />
               </div>
               <nav>
                    <ul class="ul-nav">
@@ -39,16 +53,16 @@
             
             <section>
                 <article>
-                  <h1>Projekt Kwatermejster / INVENTORY </h1>
-                  <p>Założeniem projektu jest stworzenie spójnego i wygodnego systemu do zarządzania sprzętem w ZHR. Związek posiada dość duze ilosći różnego typu majątku rozdzielone do wielu magazynów. Celem tego projektu jest sprawna inwentaryzacja, Spisy z natury, oraz zarządzanie ciągłe tzn wypożyczenia i konserwacje sprzętu.</p>
-                  <p>Projekt jest całkowicie niekomercyjny i zakłada działalność nonprofit.</p>
+                  <h1>Projek Kwatermejster / Gratulujemy udanego dodania przedmiotu !!!</h1>
+                  <p>Dziekuję za wiarę w projekt</p>
+                  <p><a href="../addBaza.php">Dodaj kolejny przedmiot!!!</a></p>
                    
                 </article>
                 
             </section>
             
-            <footer> 
-                <a class="footer" href="index.php">Created by Maciej Drążek ----------------------------- Index: 87029 SAN </a>   
+             <footer> 
+                <a class="footer" href="index.php">Koniec strony - footer Created by Maciej Drążek index:87029 SAN </a>   
             </footer>
             
             

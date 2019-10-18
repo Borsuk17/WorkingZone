@@ -3,7 +3,7 @@
 
     if(!isset($_SESSION['goodregistracion']))
     {
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit();
     }
     else
@@ -11,7 +11,7 @@
         unset($_SESSION['goodregistracion']);
     }
     
-    //Usuwamy zmienne pamietani wartosci formularza w razie niudanego submit.
+    //Usuwamy wartości zmiennych zapamiętane w formularzu na wypadek nieudanego "submit".
     if(isset($_SESSION['form_nick'])) unset($_SESSION['form_nick']);
     if(isset($_SESSION['form_email'])) unset($_SESSION['form_email']);
     if(isset($_SESSION['form_pass1'])) unset($_SESSION['form_pass1']);
@@ -50,22 +50,29 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
     </head>    
     <body>
         <div id="wrapper">
             <header> 
-              <img id="HeroImage"src="img/horizon.jpg" alt="Programista - Header" />
+             <div class="herro_image">
+                  <img id="HeroImage"src="../img/horizon.jpg" alt="Programista - Header" />
+              </div>
               <nav>
-                <a class="menu active" href="index.php">O Projekcie</a>
-                <a class="menu " href="addBaza.php">Baza</a>
-                <a class="menu " href="#">Kalendarz</a>
-                <a class="menu " href="#">Wypożyczenia</a>
-                <a class="menu " href="login.php">Logowanie</a>
-                <a class="menu " href="registracion.php">Rejesteracja</a>
+                   <ul class="ul-nav">
+                       <li class=""><a href="index.php">O Projekcie</a></li>
+                       <li><a  href="addBaza.php">Baza</a></li>
+                            
+                            
+                            
+                       </li>
+                       <li><a href="#">Kalendarz</a></li>
+                       <li><a href="mail.php">Mail</a></li>
+                       <li><a href="login.php">Logowanie</a</li>
+                       <li><a href="registracion.php">Rejesteracja</a></li>
+                   </ul>
               </nav>
             </header>
-            
             <section>
                 <article>
                   <h1>Projek Kwatermejster / Gratulujemy udanej rejestracji !!!</h1>

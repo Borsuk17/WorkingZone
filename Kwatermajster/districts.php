@@ -1,29 +1,12 @@
-
 <?php
+ session_start();
 
-// ini_set ( string $varname , string $newvalue ) : string
-
-ini_set( "smtp_server", "smtp.gmail.com");
-ini_set( "SMTP", "smtp.gmail.com");
-ini_set( "sendmail_from", '"\"C:\xampp\sendmail\sendmail.exe\" -t"');
-ini_set( "sendmail_path", "smtp.gmail.com");
-ini_set( "smtp_port", "587");
-ini_set( "error_logfile", "error.log");
-ini_set( "debug_logfile", "debug.log");
-ini_set( "auth_username", "inventory.mail.zhr@gmail.com");
-ini_set( "auth_password", "inventory1956");
-ini_set( "force_sender", "inventory.mail.zhr@gmail.com");
-
-    
-$to      = "maciek.drazek@zhr.pl";
-$subject = 'Temat - Sukces!';
-$message = "Wiadomość została pomyslnie wyslana z serwera lokalnego.";
-$headers = 'From: inventory.mail.zhr@gmail.com' . "\r\n" .
-    'Reply-To: inventory.mail.zhr@gmail.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-mail($to, $subject, $message);
-
-
+// sprawdzenie zalogowania
+    if (!isset($_SESSION['login']))
+    {
+        header('Location: index.php');
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -56,28 +39,16 @@ mail($to, $subject, $message);
                        <li><a href="districts.php">Okręgi</a></li>
                        <li><a href="mail.php">Mail-Test</a></li>
                        <li><a href="messages.php">Wiadomości</a></li>
-                       <li><a href="logout.php">Wyloguj</a</li>
+                       <li><a href="php_script/logout.php">Wyloguj</a</li>
                        <li><a href="registracion.php">Rejesteracja</a></li>
                    </ul>
               </nav>
             </header>
             
-            
             <section>
                 <article>
-                  <h1>Wysyłka maila </h1>
-                  <p>
-                   <?php
-                      if(mail($to, $subject, $message))
-                        {
-                            echo "Wiadomosc wysłana!";
-                        }
-                        else
-                        {
-                            echo "Niepowodzenie !";
-                        }
-                    ?>
-                 </p>
+                  
+                   
                 </article>
                 
             </section>
@@ -94,4 +65,3 @@ mail($to, $subject, $message);
     </body>
     
 </html>
-

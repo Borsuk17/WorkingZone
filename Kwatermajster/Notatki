@@ -7,3 +7,18 @@
 ?>
 
  <i class="fa fa-bars"></i>
+ 
+ <<<<<<< HEAD:Kwatermajster/index.php
+ <ul>
+                               <li><a  href="przegladaj.php">Przeglądaj</a</li>
+                               <li><a href="addBaza.php">ADD</a></li>
+                           </ul>
+
+<?php 
+ session_start();
+if (!isset($_SESSION['zalogowany']))
+{
+    header('Location: login.php');
+    exit();
+}
+?>
